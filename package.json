@@ -2,6 +2,10 @@
   "name": "provair",
   "version": "0.1.0",
   "description": "A provable fair system that can pass all `SP 800-22` tests",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/provair/provair.git"
+  },
   "engines": {
     "node": ">=10.16"
   },

@@ -2,6 +2,10 @@
   "name": "@provair/seed",
   "description": "The seed generator",
   "version": "0.3.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/provair/provair.git"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {

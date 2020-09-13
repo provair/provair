@@ -2,6 +2,10 @@
   "name": "@provair/core",
   "description": "The core library of provably fair algorithm",
   "version": "0.4.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/provair/provair.git"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {

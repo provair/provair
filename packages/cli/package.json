@@ -2,6 +2,10 @@
   "name": "@provair/cli",
   "description": "The provair command line tools",
   "version": "0.3.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/provair/provair.git"
+  },
   "keywords": [],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

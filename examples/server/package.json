@@ -2,6 +2,10 @@
   "name": "@provair/example-server",
   "description": "A provair server example",
   "version": "0.4.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/provair/provair.git"
+  },
   "keywords": [],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
