@@ -1,10 +1,10 @@
 {
   "name": "@provair/example-server",
   "description": "A provair server example",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/provair/provair.git"
+    "type": "git",
+    "url": "https://github.com/provair/provair.git"
   },
   "keywords": [],
   "main": "dist/index.js",
@@ -39,7 +39,7 @@
     "@loopback/core": "^2.9.5",
     "@loopback/rest": "^6.2.0",
     "@loopback/rest-explorer": "^2.2.10",
-    "@provair/core": "^0.4.0",
+    "@provair/core": "^0.5.0",
     "chalk": "^4.1.0",
     "debug": "^4.1.1",
     "kvs": "^2.0.4",

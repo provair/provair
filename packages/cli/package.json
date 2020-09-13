@@ -1,10 +1,10 @@
 {
   "name": "@provair/cli",
   "description": "The provair command line tools",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/provair/provair.git"
+    "type": "git",
+    "url": "https://github.com/provair/provair.git"
   },
   "keywords": [],
   "main": "dist/index.js",
@@ -27,8 +27,8 @@
     "verify": "npm pack && tar xf provair-cli*.tgz && tree package && npm run clean"
   },
   "dependencies": {
-    "@provair/core": "^0.4.0",
-    "@provair/seed": "^0.3.0",
+    "@provair/core": "^0.5.0",
+    "@provair/seed": "^0.4.0",
     "caporal": "^1.4.0",
     "readable-stream": "^3.6.0",
     "ts-essentials": "^7.0.0",
