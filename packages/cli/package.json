@@ -1,0 +1,50 @@
+{
+  "name": "@provair/cli",
+  "description": "The provair command line tools",
+  "version": "0.3.0",
+  "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10.16"
+  },
+  "author": "Provair Team",
+  "license": "Apache-2.0",
+  "bin": {
+    "provair": "bin/provair"
+  },
+  "scripts": {
+    "acceptance": "lb-mocha \"dist/__tests__/acceptance/**/*.js\"",
+    "build": "lb-tsc",
+    "clean": "lb-clean provair-cli*.tgz dist *.tsbuildinfo package",
+    "pretest": "npm run build",
+    "test": "lb-mocha \"dist/__tests__/**/*.js\"",
+    "unit": "lb-mocha \"dist/__tests__/unit/**/*.js\"",
+    "verify": "npm pack && tar xf provair-cli*.tgz && tree package && npm run clean"
+  },
+  "dependencies": {
+    "@provair/core": "^0.4.0",
+    "@provair/seed": "^0.3.0",
+    "caporal": "^1.4.0",
+    "readable-stream": "^3.6.0",
+    "ts-essentials": "^7.0.0",
+    "tslib": "^2.0.1"
+  },
+  "devDependencies": {
+    "@loopback/build": "^6.2.2",
+    "@loopback/testlab": "^3.2.4",
+    "@types/node": "^14.10.1",
+    "@types/readable-stream": "^2.3.9",
+    "memstreams": "^0.3.0",
+    "ts-node": "^9.0.0"
+  },
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

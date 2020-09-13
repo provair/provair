@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - v14
+  - v12
+  - v10
+install:
+  npm ci && npm run postinstall && npm run build
+script:
+  npm run test:ci && npm run coverage:ci

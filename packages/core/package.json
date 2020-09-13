@@ -1,0 +1,48 @@
+{
+  "name": "@provair/core",
+  "description": "The core library of provably fair algorithm",
+  "version": "0.4.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10.16"
+  },
+  "author": "Provair Team",
+  "license": "Apache-2.0",
+  "keywords": [
+    "provably",
+    "fair"
+  ],
+  "scripts": {
+    "acceptance": "lb-mocha \"dist/__tests__/acceptance/**/*.js\"",
+    "build": "lb-tsc",
+    "clean": "lb-clean provair-core*.tgz dist *.tsbuildinfo package",
+    "pretest": "npm run build",
+    "test": "lb-mocha \"dist/__tests__/**/*.js\"",
+    "unit": "lb-mocha \"dist/__tests__/unit/**/*.js\"",
+    "verify": "npm pack && tar xf provair-core*.tgz && tree package && npm run clean"
+  },
+  "dependencies": {
+    "bcrypto": "^5.3.0",
+    "kvs": "^2.0.4",
+    "seedrandom": "^3.0.5",
+    "tslib": "^2.0.1"
+  },
+  "devDependencies": {
+    "@loopback/build": "^6.2.2",
+    "@loopback/testlab": "^3.2.4",
+    "@provair/seed": "^0.3.0",
+    "@types/node": "^14.10.1",
+    "@types/seedrandom": "^2.4.28",
+    "debug": "^4.1.1"
+  },
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
